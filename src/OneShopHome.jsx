@@ -29,16 +29,19 @@ const GoogleReviews = () => {
   };
 
   return (
-    <section id="google-reviews" className="py-24 px-4 bg-gradient-to-b from-green-50 to-white">
+    <section
+      id="google-reviews"
+      className="py-24 px-4 bg-gradient-to-b from-green-50 to-white"
+    >
       <div className="max-w-4xl mx-auto text-center">
-      <h2 className="text-4xl font-bold mb-12 text-green-900 flex justify-center items-center gap-4">
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
-    alt="Google Logo"
-    className="h-10"
-  />
-  Unsere Google-Bewertungen
-</h2>
+        <h2 className="text-4xl font-bold mb-12 text-green-900 flex justify-center items-center gap-4">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+            alt="Google Logo"
+            className="h-10"
+          />
+          Unsere Google-Bewertungen
+        </h2>
 
         <div className="bg-white p-8 rounded-2xl shadow-2xl transition-all duration-500">
           <Slider {...settings}>
@@ -73,16 +76,15 @@ const GoogleReviews = () => {
   );
 };
 
-
 export default function OneShopHome() {
   const settings = {
-    dots: true,            // Zeigt Punkte zur Navigation an
-    infinite: true,        // Lässt das Karussell unendlich durchlaufen
-    speed: 500,            // Übergangsgeschwindigkeit in Millisekunden
-    slidesToShow: 1,       // Zeigt nur 1 Bild pro Ansicht
-    slidesToScroll: 1,     // Scrollt 1 Bild pro Mal
-    autoplay: true,        // Aktiviert den automatischen Wechsel
-    autoplaySpeed: 3000,   // Zeit in Millisekunden bis der nächste Slide kommt
+    dots: true, // Zeigt Punkte zur Navigation an
+    infinite: true, // Lässt das Karussell unendlich durchlaufen
+    speed: 500, // Übergangsgeschwindigkeit in Millisekunden
+    slidesToShow: 1, // Zeigt nur 1 Bild pro Ansicht
+    slidesToScroll: 1, // Scrollt 1 Bild pro Mal
+    autoplay: true, // Aktiviert den automatischen Wechsel
+    autoplaySpeed: 3000, // Zeit in Millisekunden bis der nächste Slide kommt
   };
 
   const [selectedProduct, setSelectedProduct] = useState(null);
