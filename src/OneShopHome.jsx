@@ -6,6 +6,74 @@ import Slider from "react-slick"; // Slick-Import in React
 import "slick-carousel/slick/slick.css"; // Slick Carousel CSS
 import "slick-carousel/slick/slick-theme.css"; // Slick Carousel Theme CSS
 
+const GoogleReviews = () => {
+  const reviews = [
+    "Top Service, super freundlich und schnelle Reparatur! 🌟",
+    "Sehr empfehlenswert, mein Handy funktioniert wieder perfekt! 📱",
+    "Beste Beratung, top Preise und schnelle Abwicklung. 👍",
+    "Super Team, haben mir sofort geholfen! Danke! 🙌",
+    "Beste Handy-Reparatur in der Stadt – immer wieder gerne! 🔥",
+  ];
+
+  const settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 600,
+    autoplay: true,
+    autoplaySpeed: 3500,
+    pauseOnHover: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+  };
+
+  return (
+    <section id="google-reviews" className="py-24 px-4 bg-gradient-to-b from-green-50 to-white">
+      <div className="max-w-4xl mx-auto text-center">
+      <h2 className="text-4xl font-bold mb-12 text-green-900 flex justify-center items-center gap-4">
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+    alt="Google Logo"
+    className="h-10"
+  />
+  Unsere Google-Bewertungen
+</h2>
+
+        <div className="bg-white p-8 rounded-2xl shadow-2xl transition-all duration-500">
+          <Slider {...settings}>
+            {reviews.map((review, index) => (
+              <div key={index}>
+                <p className="text-green-800 text-2xl font-semibold min-h-[120px] flex items-center justify-center px-4">
+                  {review}
+                </p>
+              </div>
+            ))}
+          </Slider>
+
+          <div className="flex flex-col items-center mt-8">
+            <div className="flex items-center gap-2 text-yellow-400 text-3xl">
+              ⭐⭐⭐⭐⭐
+            </div>
+            <p className="text-green-700 text-lg mt-2">
+              5,0 Sterne aus 1115 Bewertungen 🚀
+            </p>
+            <a
+              href="https://www.google.com/search?q=One+1+Shop+Handy+Service&rlz=1C1GCEV_enAT827AT827&oq=One+1+Shop+Handy+Service&aqs=chrome..69i57j0i512l2j0i22i30l4.4139j0j7&sourceid=chrome&ie=UTF-8#lrd=0x477278aedb1cc14b:0xb890f91911e7f4f5,1,,,"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-block bg-gradient-to-r from-green-700 to-green-500 text-white px-8 py-3 rounded-full font-semibold text-lg shadow hover:scale-105 transition-transform duration-300"
+            >
+              Bewertungen ansehen
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+
 export default function OneShopHome() {
   const settings = {
     dots: true,            // Zeigt Punkte zur Navigation an
@@ -285,6 +353,8 @@ export default function OneShopHome() {
           </div>
         </div>
       </section>
+
+      <GoogleReviews />
 
       <section id="standort" className="py-24 px-4 bg-white">
         <div className="max-w-6xl mx-auto text-center">
