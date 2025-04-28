@@ -229,11 +229,11 @@ export default function OneShopHome() {
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-10">Unsere Partner</h2>
           <div className="flex justify-center gap-10 items-center flex-wrap">
-            <img src="/images/partner1.png" alt="Partner 1" className="h-12" />
-            <img src="/images/partner2.png" alt="Partner 2" className="h-12" />
-            <img src="/images/partner3.png" alt="Partner 3" className="h-12" />
-            <img src="/images/partner4.png" alt="Partner 4" className="h-12" />
-            <img src="/images/partner5.png" alt="Partner 5" className="h-12" />
+            <img src="/images/partner1.png" alt="Partner 1" className="h-20" />
+            <img src="/images/partner2.png" alt="Partner 2" className="h-20" />
+            <img src="/images/partner3.png" alt="Partner 3" className="h-20" />
+            <img src="/images/partner4.png" alt="Partner 4" className="h-20" />
+            <img src="/images/partner5.png" alt="Partner 5" className="h-20" />
           </div>
         </div>
       </section>
